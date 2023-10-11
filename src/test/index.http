@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "title": "{type: String, required: true},",
-    "desciption": "{type: String, required: true}"
+    "description": "{type: String, required: true}"
 }
 
 ###
@@ -18,7 +18,7 @@ Content-Type: application/json
 
 {
     "title": "Clase de python",
-    "desciption": "Clase de Python el miercoles a las 18.00h"
+    "description": "Clase de Python el miercoles a las 18.00h"
 }
 
 ###
