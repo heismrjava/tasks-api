@@ -1,0 +1,25 @@
+GET http://localhost:5000/api/tasks
+
+###
+GET http://localhost:5000/api/tasks/6526a2b0de4b1ceba0a457a2
+
+###
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "{type: String, required: true},",
+    "desciption": "{type: String, required: true}"
+}
+
+###
+PUT http://localhost:5000/api/tasks/6526a2b0de4b1ceba0a457a2
+Content-Type: application/json
+
+{
+    "title": "Clase de python",
+    "desciption": "Clase de Python el miercoles a las 18.00h"
+}
+
+###
+DELETE http://localhost:5000/api/tasks/6526a2b0de4b1ceba0a457a2
