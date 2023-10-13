@@ -36,5 +36,4 @@ router.delete('/:id', async (req, res) => {
     res.json({message: 'Task deleted'});
 });
 
-
 module.exports = router;
