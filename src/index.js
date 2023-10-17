@@ -5,9 +5,9 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 const { mongoose } = require("./database.js");
+const { PORT } = require("./config/environment");
 
 //Settings
-app.set("port", process.env.PORT || 5000);
 
 //Middlewares
 app.use(morgan("dev"));
@@ -15,12 +15,12 @@ app.use(express.json());
 app.use(cors());
 
 //Routes
-app.use("/api/tasks", require("./routes/index"));
+app.use("/api/tasks", require("./controllers/task.controller.js"));
 
 //Static files
 app.use(express.static(path.join(__dirname, "public")));
 
 //Starting server
-app.listen(app.get("port"), () => {
-  console.log(`Server running on port ${app.get("port")}`);
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

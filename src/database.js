@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+const { DB_HOST, DB_DATABASE } = require("./config/environment");
 
-const URI = "mongodb://127.0.0.1:27017/tasks";
+const URI = DB_HOST + DB_DATABASE;
 mongoose
   .connect(URI)
   .then((db) => console.log("Connected to database"))
