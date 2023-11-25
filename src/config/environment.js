@@ -10,5 +10,6 @@ module.exports = {
   PORT: process.env.PORT || 5000,
 
   // Configuración de seguridad
-  //JWT_SECRET: process.env.JWT_SECRET || "my_secret_key",
+  JWT_SECRET: process.env.JWT_SECRET || "my_secret_key",
+  TOKEN_EXPIRATION: process.env.TOKEN_EXPIRATION || "24h",
 };
